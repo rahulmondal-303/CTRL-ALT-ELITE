@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Interactive Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="overlay">
+        <header>
+            <h1>My Interactive Website</h1>
+            <p>HTML • CSS • JavaScript</p>
+        </header>
+
+        <main>
+            <h2 id="message">Click the button to see magic ✨</h2>
+            <button onclick="changeContent()">Click Me</button>
+        </main>
+
+        <footer>
+            <p>© 2026 My Website</p>
+        </footer>
+    </div>
+
+    <script>
+        function changeContent() {
+            document.getElementById("message").innerText =
+                "You just activated JavaScript! 🚀";
+            document.body.style.backgroundImage =
+                "url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee')";
+        }
+    </script>
+
+</body>
+</html>
